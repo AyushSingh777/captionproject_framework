@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.9.13 on win32)" generated="20230131 14:45:59.570" rpa="false" schemaversion="3">
+<suite id="s1" name="Valid Register Suite" source="C:\Users\40032482\Caption Project\Caption_project_1\register_suite\valid_register_suite.robot">
+<test id="s1-t1" name="TC1" line="14">
+<kw name="Launch Browser and Navigate to Url" library="common_functionalities" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=${BROWSER_NAME}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230131 14:46:00.990" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20230131 14:46:00.974" endtime="20230131 14:46:02.815"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230131 14:46:02.815" endtime="20230131 14:46:02.950"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>20s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20230131 14:46:02.955" endtime="20230131 14:46:02.962"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230131 14:46:02.964" level="INFO">Opening url 'https://www.kohls.com/'</msg>
+<status status="PASS" starttime="20230131 14:46:02.963" endtime="20230131 14:46:12.164"/>
+</kw>
+<status status="PASS" starttime="20230131 14:46:00.974" endtime="20230131 14:46:12.165"/>
+</kw>
+<kw name="Valid Register Template">
+<arg>ayushpratap149@gmail.com</arg>
+<arg>Gujjar@77</arg>
+<arg>Apply Coupons &amp; Kohl's Cash</arg>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//a[@class='utility-item-link account utility-nav-wallet-svg']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230131 14:46:12.171" level="INFO">Clicking element 'xpath=//a[@class='utility-item-link account utility-nav-wallet-svg']'.</msg>
+<status status="PASS" starttime="20230131 14:46:12.169" endtime="20230131 14:46:12.648"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//div[@class='account-signin']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230131 14:46:12.648" level="INFO">Clicking element 'xpath=//div[@class='account-signin']'.</msg>
+<status status="PASS" starttime="20230131 14:46:12.648" endtime="20230131 14:46:21.093"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=loginEmail</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230131 14:46:21.093" level="INFO">Typing text 'ayushpratap149@gmail.com' into text field 'name=loginEmail'.</msg>
+<status status="PASS" starttime="20230131 14:46:21.093" endtime="20230131 14:46:21.319"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=loginPassword</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230131 14:46:21.320" level="INFO">Typing text 'Gujjar@77' into text field 'name=loginPassword'.</msg>
+<status status="PASS" starttime="20230131 14:46:21.320" endtime="20230131 14:46:21.556"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>name=Profilelogin</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230131 14:46:21.556" level="INFO">Clicking element 'name=Profilelogin'.</msg>
+<status status="PASS" starttime="20230131 14:46:21.556" endtime="20230131 14:46:21.851"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//span[@class='middle-menu-title']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230131 14:46:21.851" level="INFO">Clicking element 'xpath=//span[@class='middle-menu-title']'.</msg>
+<status status="PASS" starttime="20230131 14:46:21.851" endtime="20230131 14:46:21.995"/>
+</kw>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>link=Men</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<msg timestamp="20230131 14:46:22.003" level="INFO">Simulating Mouse Over on element 'link=Men'.</msg>
+<status status="PASS" starttime="20230131 14:46:22.003" endtime="20230131 14:46:23.243"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>link=Men's Dress Clothing</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230131 14:46:23.243" level="INFO">Clicking element 'link=Men's Dress Clothing'.</msg>
+<status status="PASS" starttime="20230131 14:46:23.243" endtime="20230131 14:46:47.495"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//div[@class='dy-lb-close']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230131 14:46:47.497" level="INFO">Clicking element 'xpath=//div[@class='dy-lb-close']'.</msg>
+<status status="PASS" starttime="20230131 14:46:47.495" endtime="20230131 14:46:47.775"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//p[text()='Suits &amp; Suit Separates']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230131 14:46:47.775" level="INFO">Clicking element 'xpath=//p[text()='Suits &amp; Suit Separates']'.</msg>
+<status status="PASS" starttime="20230131 14:46:47.775" endtime="20230131 14:46:56.891"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>xpath=//img[@class='pmp-hero-img']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20230131 14:46:56.892" endtime="20230131 14:46:57.274"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//img[@class='pmp-hero-img']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230131 14:46:57.274" level="INFO">Clicking element 'xpath=//img[@class='pmp-hero-img']'.</msg>
+<status status="PASS" starttime="20230131 14:46:57.274" endtime="20230131 14:47:08.421"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//a[contains(normalize-space(),'38 SHORT')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230131 14:47:08.421" level="INFO">Clicking element 'xpath=//a[contains(normalize-space(),'38 SHORT')]'.</msg>
+<msg timestamp="20230131 14:47:38.835" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-62.png"&gt;&lt;img src="selenium-screenshot-62.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230131 14:47:38.835" level="FAIL">Element with locator 'xpath=//a[contains(normalize-space(),'38 SHORT')]' not found.</msg>
+<status status="FAIL" starttime="20230131 14:47:08.421" endtime="20230131 14:47:38.841"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//a[contains(normalize-space(),'42 SHORT')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230131 14:47:38.841" endtime="20230131 14:47:38.841"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>name=pdp-addtobag</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230131 14:47:38.841" endtime="20230131 14:47:38.841"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//button[@class='btn btn-primary']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230131 14:47:38.841" endtime="20230131 14:47:38.841"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>xpath=//span[contains(text(),'Apply Coupons')]</arg>
+<arg>${expected_result}</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="NOT RUN" starttime="20230131 14:47:38.841" endtime="20230131 14:47:38.849"/>
+</kw>
+<status status="FAIL" starttime="20230131 14:46:12.166" endtime="20230131 14:47:38.849"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230131 14:47:38.849" endtime="20230131 14:47:41.271"/>
+</kw>
+<status status="FAIL" starttime="20230131 14:46:00.974" endtime="20230131 14:47:41.271">Element with locator 'xpath=//a[contains(normalize-space(),'38 SHORT')]' not found.</status>
+</test>
+<doc>This file contains test cases related to valid login</doc>
+<status status="FAIL" starttime="20230131 14:45:59.587" endtime="20230131 14:47:41.271"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Valid Register Suite">Valid Register Suite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
